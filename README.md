@@ -1,0 +1,4 @@
+Supervision-2
+=============
+This is my first github project. I'm using it to keep a track of an online learning course that I'm designing for some folk who work for a couple of local councils. The course follows on from a Moodle course that introduced some basic concepts in supervision practice and presented content from the employing organisations' policies and the national framework for professional development for social workers. The Moodle course included certification by the successful completion of the assessments in four topics - Reflective Pracitce, Supervision, Principles, Policies and Procedures and Professional Capabilities Framework.
+I decided to move away from developing within the Moodle platform because there is potential commercial value in the courses which would be limited by sticking to a specific delivery platform.
