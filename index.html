@@ -32,7 +32,7 @@
                 <div id="collapseTwo" class="accordion-body collapse">
                   <div class="accordion-inner">You will look at a case study that illustrates how supervision practices impact on service users. You and your supervisor will then critically explore your supervision identifying strengths and areas for development. Use the Completed button below to setup an email reminder for your supervisor to confirm that this topic is complete.
                   <p></p>
-                  <p><button class="btn btn-info">Case Study</button></p>
+                  <p><button onclick="$('#topic1a').toggle(); return false;"class="btn btn-info">Case Study</button></p>
                   <p><button class="btn btn-success">Completed</button></p>
                   </div>
                 </div>
@@ -80,7 +80,7 @@
               <div class="offset1">
                 <table class="table table-bordered"><tr><td>
                   <div>
-                    <form class="form-horizontal">
+                    <form id="sign-in" class="form-horizontal">
                       <div class="control-group">
                         <label class="control-label" for="inputEmail">Email</label>
                         <div class="controls">
@@ -98,30 +98,30 @@
                           <label class="checkbox">
                             <input type="checkbox"> Remember me
                           </label>
-                          <button type="submit" class="btn">Sign in</button>
+                          <button onclick="$('#sign-in').toggle(); return false;"type="submit" class="btn">Sign in</button>
                         </div>
                       </div>
                       </form>
                   </div>
-                  <div>
+                  <div id="topic1a" hidden>
                     put some stuff for the case study here
                   </div>  
-                  <div>
+                  <div id="topic1b" hidden>
                     make a form to handle the first topic confirmation email alert
                   </div>
-                  <div>
+                  <div id="topic2a" hidden>
                     video based learning path in this div
                   </div>
-                  <div>
+                  <div id="topic3a" hidden>
                     Essential reading
                   </div>
-                  <div>
+                  <div id="topic3b" hidden>
                     Additional Reading
                   </div>
-                  <div>
+                  <div id="topic3c" hidden>
                     Completion tool for third topic
                   </div>
-                  <div>
+                  <div id="topic4a"hidden>
                     Completion tool via email alert to supervisor for training and development plan
                   </div>
                 </td></tr></table>
