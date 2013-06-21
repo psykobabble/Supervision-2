@@ -11,17 +11,17 @@
   <body>
       <div class="row-fluid">
         <div class="span12">
-          <h3 class="offset1">Critically Reflective Supervision</h3>
+          <h4 class="offset1">Critically Reflective Supervision</h4>
             <div class="row-fluid">
               <div class="span7">
                 <div class="offset1">
                   <div class="btn-toolbar">
-                    <button class="btn btn-info" onlick="$('#progress').show().siblings().hide(); return false;">Show My Progress</button>
-                    <button class="btn btn-danger" onclick="$('#sign-in').show().siblings().hide(); return false;">Sign Me Out</button>
+                    <button onclick="$('#progress').show().siblings().hide(); return false;" class="btn btn-info">Show My Progress</button>
+                    <button onclick="$('#sign-in').show().siblings().hide(); return false;" class="btn btn-danger">Sign Me Out</button>
                   </div>
                 </div>
               </div>
-            </div>
+            </div><!--this one-->
           </div>
         <div class="row-fluid">
           <div class="span3">
@@ -87,7 +87,7 @@
             </div>
           </div><!--this is where the side bar accordion div is closed-->  
           <div class="row-fluid">
-            <div class="span5">
+            <div class="span9">
               <div class="offset1">
                 <table class="table table-bordered"><tr><td>
                   <div>
@@ -112,8 +112,7 @@
                           <button onclick="$('#sign-in').hide(); $('#progress').show(); return false;"type="submit" class="btn">Sign in</button>
                         </div>
                       </div>
-                      </form>
-                  </div>
+                    </form>
                   <div id="progress" hidden>
                     Summary of what the participant has completed and what remains to be done
                   </div>
@@ -127,7 +126,10 @@
                     video based learning path in this div
                   </div>
                   <div id="topic3a" hidden>
-                    Essential reading
+                    <a href="file://assets/Supervision_Article.pdf">Supervision Now or Never</a>
+                    <button onclick="$('#EssentialReading').toggle()" class="btn btn-inverse">Show/Hide Essential Reading</button>
+                    <p></p>
+                    <iframe id="EssentialReading" src="https://docs.google.com/file/d/0B0-O2-ELDT4LZm9YWmRWcFdkdVU/preview" width="800" height="350" hidden></iframe>
                   </div>
                   <div id="topic3b" hidden>
                     Additional Reading
@@ -138,6 +140,7 @@
                   <div id="topic4a"hidden>
                     Completion tool via email alert to supervisor for training and development plan
                   </div>
+                </div>
                 </td></tr></table>
               </div>
             </div>
