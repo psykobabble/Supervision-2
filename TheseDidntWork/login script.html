@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html>
+  <head>
+    <title>Critically Reflective Supervision</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+  </head>
+  <body>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $('#error-seg').hide();
+        $('form[name=sign-in').submit(function(){
+          $('#error-seg').hide();
+          $.post('ajax.php', {username: $('[name=inputEmail]').val(), password: $('[name=inputPassword]').val()},
+            function(data) {
+              if(data.success)
+              {
+                location.href-data.redirect
+              }
+              else
+              {
+                $('#error-seg').html(data.message).fadein();
+              }
+            }, 'json');
+          return false;
+        });
+      });
+    </script>
+    <div>
+      <form id="sign-in" class="form-horizontal">
+        <div class="control-group">
+          <label class="control-label" for="inputEmail">Email</label>
+          <div class="controls">
+            <input type="text" id="inputEmail" placeholder="Email">
+          </div>
+        </div>
+        <div class="control-group">
+          <label class="control-label" for="inputPassword">Password</label>
+          <div class="controls">
+            <input type="password" id="inputPassword" placeholder="Password">
+          </div>
+        </div>
+        <div class="control-group">
+          <div class="controls">
+            <label class="checkbox">
+              <input type="checkbox"> Remember me
+            </label>
+            <button type="submit" class="btn">Sign in</button>
+          </div>
+          <div id="error-seg"></div>
+        </div>
+        </form>
+    </div>
+                  
+
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
