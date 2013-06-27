@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html>
+  <head>
+    <title>Critically Reflective Supervision</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+    <style type="text/css">
+      .panel { display:none; }
+      .panel h3 { padding:0px; margin:0px; margin-bottom:10px; }
+      #panel_navigation{ font-size:30px; text-align:center; padding:5px; background-color: #0000000; color:black; }
+      #all_panel_container { padding:10px; color:black; height:100%; border:1px solid #336499; }  
+      #panel_wrapper { width:100%;  }
+    </style>
+  </head>
+  <body>
+    <div class="row-fluid">
+      <div class="span12">
+        <h4 class="offset1">Critically Reflective Supervision</h4>
+          <div class="row-fluid">
+            <div class="span7">
+              <div class="offset1">
+                <div class="btn-toolbar">
+                  <button onclick="$('#progress').show().siblings().hide(); return false;" class="btn btn-info">Show My Progress</button>
+                  <button onclick="$('#sign-in').show().siblings().hide(); return false;" class="btn btn-danger">Sign Me Out</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      <div class="row-fluid">
+        <div class="span3">
+          <div class="offset1">
+            <div class="accordion" id="accordion2">
+              <div class="accordion-group">
+                <div class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">What's this all about?</a>
+                </div>
+                <div id="collapseOne" class="accordion-body collapse">
+                  <div class="accordion-inner">This is a collection of documents, links, quizzes and other support materials for critically reflective supervision. You should have completed the first module in <a target="_blank" href="http://moodlex.essex.ac.uk/course/view.php?id=25">Reflective Supervision </a> before starting on the work here.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-group">
+                <div class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">Issues in Supervision</a>
+                </div>
+                <div id="collapseTwo" class="accordion-body collapse">
+                  <div class="accordion-inner">You will look at a case study that illustrates how supervision practices impact on service users. You and your supervisor will then critically explore your supervision identifying strengths and areas for development. Use the Completed button below to setup an email reminder for your supervisor to confirm that this topic is complete.
+                    <p></p>
+                    <p><button onclick="$('#topic1a').show().siblings().hide(); return false;" class="btn btn-info">Case Study</button></p>
+                    <p><button onclick="$('#topic1b').show().siblings().hide(); return false;" class="btn btn-success">Completed</button></p>
+                  </div>
+                </div>
+              </div>
+            <div class="accordion-group">
+              <div class="accordion-heading">
+                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree">Simulated Supervision</a>
+              </div>
+              <div id="collapseThree" class="accordion-body collapse">
+                <div class="accordion-inner">We will be using some examples of simulated supervision practice to explore a variety of models of the supervision relationship. We will also address issues in supporting the performance of others, challenging ourselves, managing workloaads and being accountable and taking responsibility.
+                  <p></p>
+                  <p><button onclick="$('#topic2a').show().siblings().hide(); return false;" class="btn btn-primary">Start Simulation</button></p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-group">
+              <div class="accordion-heading">
+                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseFour">Readings and Research</a>
+              </div>
+              <div id="collapseFour" class="accordion-body collapse">
+                <div class="accordion-inner">This topic focusses on research and theoretical material that supports our understanding of the function and nature of supervision.
+                  <p></p>
+                  <p><button onclick="$('#topic3a').show().siblings().hide(); return false;" class="btn btn-primary">Essential Reading</button></p>
+                  <p><button onclick="$('#topic3b').show().siblings().hide(); return false;" class="btn btn-info">Additional Reading</button></p>
+                  <p><button onclick="$('#topic3c').show().siblings().hide(); return false;" class="btn btn-success">Completed</button></p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-group">
+              <div class="accordion-heading">
+                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseFive">Training and Development Plan</a>
+              </div>
+              <div id="collapseFive" class="accordion-body collapse">
+                <div class="accordion-inner">Once you have completed the other topics you and your supervisor will to discuss your ongoing training and development needs. Use the Completed button below to setup an email reminder for your supervisor to confirm that you have agreed your training and development plan.
+                  <p></p>
+                  <p><button onclick="$('#topic4a').show().siblings().hide(); return false;" class="btn btn-success">Completed</button></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><!--this is where the side bar accordion div is closed-->  
+      <div class="row-fluid">
+        <div class="span9">
+          <div class="offset1">
+            <table class="table table-bordered"><tr><td>
+              <div>
+                <form id="sign-in" class="form-horizontal">
+                  <div class="control-group">
+                    <label class="control-label" for="inputEmail">Email</label>
+                    <div class="controls">
+                      <input type="text" id="inputEmail" placeholder="Email">
+                    </div>
+                  </div>
+                  <div class="control-group">
+                    <label class="control-label" for="inputPassword">Password</label>
+                    <div class="controls">
+                      <input type="password" id="inputPassword" placeholder="Password">
+                    </div>
+                  </div>
+                  <div class="control-group">
+                    <div class="controls">
+                      <label class="checkbox">
+                        <input type="checkbox"> Remember me
+                      </label>
+                      <button onclick="$('#sign-in').hide(); $('#progress').show(); return false;"type="submit" class="btn">Sign in</button>
+                    </div>
+                  </div>
+                </form>
+                <div id="progress" hidden><!--content divs start here-->
+                  Summary of what the participant has completed and what remains to be done
+                </div>
+                <div id="topic1a" hidden>
+                  put some stuff for the case study here
+                </div>  
+                <div id="topic1b" hidden>
+                  make a form to handle the first topic confirmation email alert
+                </div>
+                <div id="topic2a" hidden>
+                  video based learning path
+                  <div id="Intro">
+                    <iframe src="https://docs.google.com/file/d/0B0-O2-ELDT4LcU5pSkpfZHpTdzQ/preview" width="100%" height="385"></iframe>
+                    <br>
+                    <button onclick="$('#Intro').hide(); $('#Next').show(); return false" class="btn btn-info">Next</button>
+                    <button onclick="$('#Intro').hide(); $('#Alt').show(); return false" class="btn btn-info">Alternative</button>
+                    <button onclick="$('#Intro').hide(); $('#Overview').show(); return false" class="btn btn-info">Overview</button>
+                  </div>
+                  <div id="Next" hidden>
+                    <iframe src="https://docs.google.com/file/d/0B0-O2-ELDT4LcHh6NGN4RTBzZ0U/preview" width="100%" height="385"></iframe>
+                    <br>
+                    <button onclick="$('#Next').hide(); $('#Intro').show(); return false" class="btn btn-info">Back</button>
+                    <button onclick="$('#Next').hide(); $('#Next_Alt').show(); return false" class="btn btn-info">Alternative</button>
+                    <button onclick="$('#Next').hide(); $('#Overview').show(); return false" class="btn btn-info">Overview</button>
+                  </div>
+                  <div id="Alt" hidden>
+                    <iframe src="https://docs.google.com/file/d/0B0-O2-ELDT4LNHZqaENNRkJpZ3M/preview" width="100%" height="385"></iframe>
+                    <br>
+                    <button onclick="$('#Alt').hide(); $('#Intro').show(); return false" class="btn btn-info">Back</button>
+                    <button onclick="$('#Alt').hide(); $('#Next_Alt').show(); return false" class="btn btn-info">Next</button>
+                    <button onclick="$('#Alt').hide(); $('#Overview').show(); return false" class="btn btn-info">Overview</button>
+                  </div>
+                  <div id="Overview" hidden>
+                    <iframe src="https://docs.google.com/file/d/0B0-O2-ELDT4LdkZFeWF2WHNhbVE/preview" width="100%" height="385"></iframe>
+                    <br>
+                    <button onclick="$('#Overview').hide(); $('#Alt').show(); return false" class="btn btn-info">Back</button>
+                  </div>
+                  <div id="Next_Alt" hidden>
+                    <iframe src="https://docs.google.com/file/d/0B0-O2-ELDT4LeWdYSkJJcHVCSTA/preview" width="100%" height="385"></iframe>
+                    <br>
+                    <button onclick="$('#Next_Alt').hide(); $('#Alt').show(); return false" class="btn btn-info">Back</button>
+                    <button onclick="$('#Next_Alt').hide(); $('#Next').show(); return false" class="btn btn-info">Alternative</button>
+                    <button onclick="$('#Next_Alt').hide(); $('#Overview').show(); return false" class="btn btn-info">Overview</button>
+                  </div>
+                </div>
+                <div id="topic3a" hidden>
+                  <a href="https://docs.google.com/file/d/0B0-O2-ELDT4LZm9YWmRWcFdkdVU/edit?usp=sharing">Here is a link that will download</a> the article to read in another application.
+                  <iframe src="https://docs.google.com/file/d/0B0-O2-ELDT4LZm9YWmRWcFdkdVU/preview" width="100%" height="400"></iframe>
+                </div>
+                <div id="topic3b" hidden>
+                  <h3>Additional Reading</h3>
+                  <div id='panel_wrapper'>
+                    <div id='panel_navigation'></div>
+                      <div id='all_panel_container'>
+                        <div class='panel'>
+                            <h4>A Question based Approach to Supervision</h4> 
+                            <p>One of the aims of supervision is to help people to find new version fo the situation or work-related scenario that has become stuck. This may be achieved by asking questions that invite change. The following approach seems to produce the most helpful outcomes.</p>
+                            <ul>
+                              <li>Do not give advice unless absolutelely necessary.</li>
+                              <li>Do not offer solutions until absolutely necessary.</li>
+                              <li>Do not make interpretations of people's behaviour or motives.</li>
+                            </ul>
+                            <p>Supervision may sometimes require a less open and more directive or guidance based approach than this. Tomm (1988) suggests asking different kinds of questions which can help people think from new angles. These techniques and ways of asking questions have been formulated into some core concepts, the seven Cs (adapted from Launer, 2006), which illustrates how to put supervision into practice. These are summarised in the following sections with reference to both educational and clinical supervision.</p> 
+                        </div>
+                          <div class='panel'>  
+                              <h4>Conversations</h4>  
+                              <p>This implies that the conversation itself is the working tool. Effective conversations don't just describe people's view of reality, they create new understanding of it through the opportunity for peopl to rethink and reconstruct their stories.</p>  
+                          </div>
+                          <div class='panel'>  
+                              <h4>Curiosity</h4>  
+                              <p>This is the factor that changes chat into a more substantial conversation. It is used to develop the story about clients, colleagues and oneself. It invlovles paying close attention to both verbal and non-verbal language. It includes curiosity about the supervisor's own responses; feelings of criticism, boredom, anxiety, etc. An important feature is taking a position of neutrality. This concept is similar to that of being non-judgemental, but taking a neutral stance allows us acknowldge our own position as well as becomgin curious about the different positions others might take, including the position of no change.</p>  
+                          </div>
+                          <div class='panel'>  
+                              <h4>Contexts</h4>  
+                              <p>This develops an understanding of the person's networks, their sense of culture, faith, beliefs, community, values, history and geography, and how these may impinge on the case presented. An important context is that of how power is understood (see below). Who holds the power and how is it seen by others? Who is asking for supervision and for what purpose? Understanding the different contexts of all the people or organisations involved is key to developing effective clinincal supervision conversations and making them come alive.</p>  
+                          </div>
+                          <div class='panel'>  
+                              <h4>Complexity</h4>  
+                              <p>This involves thinking about things in a non-linear fashion, getting away from fixed ideas of cause and effect. It is a way of becoming more interested in interactions between people and the kind of patterns that develop between people and events over time to produce a richer description of the story.</p>  
+                          </div>
+                          <div class='panel'>  
+                              <h4>Creativity</h4>  
+                              <p>This means finding a way to create a story or account of reality that makes better sense for people than the one they are going through. To do this involves using oneself, intuition and sensitivity to fine-tune the conversation. It also implies a the creative process of jointly constructing a new version of the story through the process of supervision.</p>  
+                          </div>
+                          <div class='panel'>  
+                              <h4>Caution</h4>  
+                              <p>This consists of looking for cues from the client to monitor their responses. It invloves working on the cusp between affirmation and perturbation in order to get an appropriate level of chalenge without being confrontational and without being too bland. Sometimes it may be appropriate to give straightforward advice (although you need to be aware o its limitations).</p>  
+                          </div>
+                          <div class='panel'>  
+                              <h4>Care</h4>  
+                              <p>This encomapsses being respectful, considerate and attentive to clients, supervisees and yourself. It means ensuring that the work is carried out within an ethical framework.</p>  
+                          </div>
+                      </div>
+                  </div>
+                </div>
+                <div id="topic3c" hidden>
+                  Completion tool for third topic
+                </div>
+                <div id="topic4a"hidden>
+                  Completion tool via email alert to supervisor for training and development plan
+                </div>
+              </div>
+            </td></tr></table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+      $(document).ready(function(){
+  
+        //show the first panel using fadeIn - I know that .show() would do just as well but there's evidence for better readability with fadedIn on-screen text.
+        $('.panel:first').fadeIn(100);
+        //this adds a class called panel_visible to keep track of  which panel is currently shown - I don't know whether using classes like this is such a good idea because it's not really doing any styling but I was casting about for something to get a handle on what will be happening on the screen and saw someone else use a technique like this.
+        $('.panel:first').addClass('panel_visible');
+  
+        //declare the variables for the nav elements - I'd started out with a massive list of variables that I thought I was going to need but saw someone else doing something similar but much more elegantly.
+        var panel_No = $('.panel').length; //gets the number of panels
+        var prev_html = '<img border=0 src="images/prev.jpg" style="vertical-align:middle">';
+        var next_html = '<img border=0 src="images/next.jpg" style="vertical-align:middle">';
+  
+        //use this mark up to put some stuff in the panel_navigation div.  
+        $('#panel_navigation').html('<a href="javascript:prev_panel();">' + prev_html + '</a> <span id="current_panel_num">1</span>/' + panel_No +' <a href="javascript:next_panel();">' + next_html + '</a>');  
+        //so this gives me the link to the previous panel, the current panel number, the total number of panels and the link to next panel. The href thingumies (do they call these attributes?) inside the anchor (<a></a>) tags link to the functions defined in the next bit. Clicking the links should call the functions.
+
+        });
+  
+        //OK, so now for the bit I'm less confident about. It's time to define the functions to be called by clickinig the previous and next links defined above.  
+        function prev_panel(){
+  
+            //I think this should tell me whether there is a panel before the current visible panel. BTW it took me quite some time from looking at Keith's example to work out that the dollar sign just designates another variable - I must not get side tracked by this sort of thing again!
+            if($('.panel_visible').prev('.panel').length){
+  
+                //if there is this will hide the current visible panel by using fadeOut
+                $('.panel_visible:not(:animated)').fadeOut(100, function(){
+                    //put the previous panel on display by removing the relevant class from the current panel and applying it to the previous one and faddingIn (not sure that this is the best way to annotate these classes)  
+                    $('.panel_visible').removeClass('panel_visible').prev('.panel').addClass('panel_visible').fadeIn(100);
+                    //use parseInt to convert the text in the current_panel_num to an integer.  
+                    var current = parseInt($('#current_panel_num').text());
+                    //subtract one from current_panel_num because this is the function to show the previous panel.
+                    $('#current_panel_num').text(current - 1);
+                });
+            }
+  
+        }
+  
+        //now time to do something comparable to define a function to show the next panel.
+        function next_panel(){
+            if($('.panel_visible').next('.panel').length){
+                $('.panel_visible:not(:animated)').fadeOut(100, function(){
+                    $('.panel_visible').removeClass('panel_visible').next('.panel').addClass('panel_visible').fadeIn(100);
+                    var current = parseInt($('#current_panel_num').text());
+                    $('#current_panel_num').text(current + 1);
+                });
+            }
+        }
+    </script>
+  </body>
+</html>
