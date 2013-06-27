@@ -130,7 +130,40 @@
                   make a form to handle the first topic confirmation email alert
                 </div>
                 <div id="topic2a" hidden>
-                  video based learning path in this div
+                  video based learning path
+                  <div id="Intro">
+                    <iframe src="https://docs.google.com/file/d/0B0-O2-ELDT4LcU5pSkpfZHpTdzQ/preview" width="100%" height="385"></iframe>
+                    <br>
+                    <button onclick="$('#Intro').hide(); $('#Next').show(); return false" class="btn btn-info">Next</button>
+                    <button onclick="$('#Intro').hide(); $('#Alt').show(); return false" class="btn btn-info">Alternative</button>
+                    <button onclick="$('#Intro').hide(); $('#Overview').show(); return false" class="btn btn-info">Overview</button>
+                  </div>
+                  <div id="Next" hidden>
+                    <iframe src="https://docs.google.com/file/d/0B0-O2-ELDT4LcHh6NGN4RTBzZ0U/preview" width="100%" height="385"></iframe>
+                    <br>
+                    <button onclick="$('#Next').hide(); $('#Intro').show(); return false" class="btn btn-info">Back</button>
+                    <button onclick="$('#Next').hide(); $('#Next_Alt').show(); return false" class="btn btn-info">Alternative</button>
+                    <button onclick="$('#Next').hide(); $('#Overview').show(); return false" class="btn btn-info">Overview</button>
+                  </div>
+                  <div id="Alt" hidden>
+                    <iframe src="https://docs.google.com/file/d/0B0-O2-ELDT4LNHZqaENNRkJpZ3M/preview" width="100%" height="385"></iframe>
+                    <br>
+                    <button onclick="$('#Alt').hide(); $('#Intro').show(); return false" class="btn btn-info">Back</button>
+                    <button onclick="$('#Alt').hide(); $('#Next_Alt').show(); return false" class="btn btn-info">Next</button>
+                    <button onclick="$('#Alt').hide(); $('#Overview').show(); return false" class="btn btn-info">Overview</button>
+                  </div>
+                  <div id="Overview" hidden>
+                    <iframe src="https://docs.google.com/file/d/0B0-O2-ELDT4LdkZFeWF2WHNhbVE/preview" width="100%" height="385"></iframe>
+                    <br>
+                    <button onclick="$('#Overview').hide(); $('#Alt').show(); return false" class="btn btn-info">Back</button>
+                  </div>
+                  <div id="Next_Alt" hidden>
+                    <iframe src="https://docs.google.com/file/d/0B0-O2-ELDT4LeWdYSkJJcHVCSTA/preview" width="100%" height="385"></iframe>
+                    <br>
+                    <button onclick="$('#Next_Alt').hide(); $('#Alt').show(); return false" class="btn btn-info">Back</button>
+                    <button onclick="$('#Next_Alt').hide(); $('#Next').show(); return false" class="btn btn-info">Alternative</button>
+                    <button onclick="$('#Next_Alt').hide(); $('#Overview').show(); return false" class="btn btn-info">Overview</button>
+                  </div>
                 </div>
                 <div id="topic3a" hidden>
                   <a href="https://docs.google.com/file/d/0B0-O2-ELDT4LZm9YWmRWcFdkdVU/edit?usp=sharing">Here is a link that will download</a> the article to read in another application.
